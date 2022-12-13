@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Raleway :ital,wght@1,500 & family= Roboto:wght@400;500 & display=swap" rel="stylesheet">
+    <title>Notas</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="capelo">
+            <h1><i>Calculadora de Médias</i></h1>
+        </header>
+        <h2><I>Saiba se Você Passou de Ano Pelas Sua Notas</I></h2>
+        <form id="form-atividade">
+            <input type="text" id="nome-atividade" required placeholder="      Nome da Atividade" />
+            <input type="number" id="nota-atividade" required placeholder="  Nota" min="0" max="10" />
+            <button type="submit">Calcular ></button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome da Atividade
+                    </th>
+                    <th>Nota da Atividade</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Média final</td>
+                    <td id="media-final-valor">---</td>
+                    <td id="media-final-resultado">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
